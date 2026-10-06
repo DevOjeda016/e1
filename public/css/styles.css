@@ -1,0 +1,224 @@
+:root {
+  --color: #b45309;
+  --color-oscuro: #92400e;
+  --texto: #3b2a1a;
+  --fondo: #fdf6ec;
+  --borde: #e5d3b8;
+  --error: #b91c1c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: system-ui, sans-serif;
+  color: var(--texto);
+  background: var(--fondo);
+}
+
+body.offline::before {
+  content: "Sin conexión: se muestran los datos guardados";
+  display: block;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #fff;
+  background: #7c2d12;
+}
+
+a {
+  color: var(--color);
+}
+
+main {
+  flex: 1;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+}
+
+.cabecera {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  background: #fff;
+  border-bottom: 1px solid var(--borde);
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+}
+
+.menu button {
+  padding: 0.3rem 0.8rem;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  background: none;
+  border: 1px solid var(--borde);
+  border-radius: 6px;
+}
+
+.hero {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.hero h1 {
+  margin-top: 0;
+  font-size: clamp(1.8rem, 5vw, 2.6rem);
+}
+
+.ventajas h2,
+.llamado {
+  text-align: center;
+}
+
+.tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.tarjeta {
+  padding: 1rem 1.25rem;
+  background: #fff;
+  border: 1px solid var(--borde);
+  border-radius: 8px;
+}
+
+.tarjeta h3 {
+  margin-top: 0;
+}
+
+.llamado {
+  padding: 2rem 0;
+}
+
+.boton {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  font: inherit;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  background: var(--color);
+  border: 1px solid var(--color);
+  border-radius: 6px;
+}
+
+.boton:hover {
+  background: var(--color-oscuro);
+}
+
+.boton.secundario {
+  color: var(--color);
+  background: #fff;
+}
+
+.formulario {
+  max-width: 420px;
+  margin: 0 auto 2rem;
+  padding: 1.5rem;
+  background: #fff;
+  border: 1px solid var(--borde);
+  border-radius: 8px;
+}
+
+.formulario h1 {
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+form {
+  display: grid;
+  gap: 1rem;
+}
+
+label {
+  display: grid;
+  gap: 0.25rem;
+  font-size: 0.9rem;
+}
+
+input {
+  padding: 0.55rem;
+  font: inherit;
+  border: 1px solid var(--borde);
+  border-radius: 6px;
+}
+
+.acciones {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.mensaje {
+  min-height: 1.2rem;
+  color: var(--error);
+}
+
+.vacio {
+  text-align: center;
+}
+
+.tabla-scroll {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+th,
+td {
+  padding: 0.6rem 0.8rem;
+  text-align: left;
+  border-bottom: 1px solid var(--borde);
+}
+
+td button {
+  margin-right: 0.3rem;
+  padding: 0.3rem 0.7rem;
+  font: inherit;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid var(--borde);
+  border-radius: 6px;
+}
+
+td button.peligro {
+  color: var(--error);
+}
+
+.pie {
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.85rem;
+  background: #fff;
+  border-top: 1px solid var(--borde);
+}

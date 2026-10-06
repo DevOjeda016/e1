@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Iniciar sesión · Panadería La Espiga</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script type="module" src="/js/login.js"></script>
+  </head>
+  <body>
+    <header class="cabecera">
+      <a class="logo" href="/">🥖 La Espiga</a>
+      <nav class="menu">
+        <a href="/">Inicio</a>
+        <a href="/productos.html" data-auth="in" hidden>Productos</a>
+        <span id="saludo" data-auth="in" hidden></span>
+        <button id="salir" type="button" data-auth="in" hidden>Salir</button>
+        <a href="/login.html" data-auth="out" hidden>Entrar</a>
+        <a href="/registro.html" data-auth="out" hidden>Registro</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="formulario">
+        <h1>Iniciar sesión</h1>
+        <form id="form">
+          <label>
+            Correo o username
+            <input name="identificador" type="text" autocomplete="username" required />
+          </label>
+          <label>
+            Contraseña
+            <input name="password" type="password" autocomplete="current-password" required />
+          </label>
+          <button class="boton" type="submit">Entrar</button>
+        </form>
+        <p id="mensaje" class="mensaje" role="alert"></p>
+        <p>¿No tienes cuenta? <a href="/registro.html">Regístrate</a></p>
+      </section>
+    </main>
+
+    <footer class="pie">
+      <p>Panadería La Espiga · Proyecto de práctica</p>
+    </footer>
+  </body>
+</html>

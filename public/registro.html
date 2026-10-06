@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Registro · Panadería La Espiga</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script type="module" src="/js/registro.js"></script>
+  </head>
+  <body>
+    <header class="cabecera">
+      <a class="logo" href="/">🥖 La Espiga</a>
+      <nav class="menu">
+        <a href="/">Inicio</a>
+        <a href="/productos.html" data-auth="in" hidden>Productos</a>
+        <span id="saludo" data-auth="in" hidden></span>
+        <button id="salir" type="button" data-auth="in" hidden>Salir</button>
+        <a href="/login.html" data-auth="out" hidden>Entrar</a>
+        <a href="/registro.html" data-auth="out" hidden>Registro</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="formulario">
+        <h1>Crear cuenta</h1>
+        <form id="form">
+          <label>
+            Nombre
+            <input name="nombre" type="text" autocomplete="name" required />
+          </label>
+          <label>
+            Correo
+            <input name="correo" type="email" autocomplete="email" required />
+          </label>
+          <label>
+            Username
+            <input name="username" type="text" autocomplete="username" minlength="3" maxlength="20" required />
+          </label>
+          <label>
+            Contraseña
+            <input name="password" type="password" autocomplete="new-password" minlength="6" required />
+          </label>
+          <button class="boton" type="submit">Registrarme</button>
+        </form>
+        <p id="mensaje" class="mensaje" role="alert"></p>
+        <p>¿Ya tienes cuenta? <a href="/login.html">Inicia sesión</a></p>
+      </section>
+    </main>
+
+    <footer class="pie">
+      <p>Panadería La Espiga · Proyecto de práctica</p>
+    </footer>
+  </body>
+</html>
