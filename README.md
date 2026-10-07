@@ -38,4 +38,8 @@ PORT=4000 npm start
 
 - `server.js`: servidor Express y API
 - `db.js`: base de datos SQLite (se crea sola en `app.db`)
-- `public/`: páginas, estilos, scripts y `sw.js` (service worker)
+- `public/`: páginas, estilos, scripts, `sw.js` (service worker), `manifest.json` e íconos
+
+## Instalarla como app
+
+Con la app abierta en Chrome o Edge, usa el botón de instalar en la barra de direcciones (o menú → "Instalar La Espiga").
