@@ -4,7 +4,9 @@ App web sencilla para administrar los productos de una panadería. Incluye regis
 
 ## Requisitos
 
-- Node.js 22.13 o superior
+- Node.js 22.13 o superior (descárgalo en https://nodejs.org, versión LTS)
+
+Revisa tu versión con `node -v`. Si es menor, `npm start` se detiene y muestra `Unsupported engine`: actualiza Node y vuelve a correrlo.
 
 ## Cómo correrla
 
