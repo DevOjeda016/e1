@@ -39,7 +39,7 @@ PORT=4000 npm start
 
 - `server.js`: servidor Express y API
 - `db.js`: base de datos SQLite (se crea sola en `app.db`)
-- `public/`: páginas, estilos, scripts, `sw.js` (service worker), `manifest.json` e íconos
+- `public/`: páginas, estilos, scripts, `sw.js` (service worker), `manifest.json` e íconos, y `img/` con las fotos de la landing (de [Unsplash](https://unsplash.com), licencia libre)
 
 ## Instalarla como app
 

@@ -15,7 +15,11 @@ const ARCHIVOS = [
   '/js/productos.js',
   '/manifest.json',
   '/icons/icon-192.png',
-  '/icons/icon-512.png'
+  '/icons/icon-512.png',
+  '/img/hero.jpg',
+  '/img/conchas.jpg',
+  '/img/hogaza.jpg',
+  '/img/pastelitos.jpg'
 ]
 
 const redPrimero = async (request, nombreCache) => {
