@@ -32,7 +32,7 @@ PORT=4000 npm start
 ## Probar el modo sin internet
 
 1. Inicia sesión y entra a **Productos** al menos una vez con internet.
-2. En DevTools → Network activa **Offline** y recarga la página.
+2. En DevTools > Network activa **Offline** y recarga la página.
 3. Seguirás viendo la app y tu lista de productos. Guardar o eliminar mostrará "Sin conexión".
 
 ## Estructura
@@ -43,4 +43,4 @@ PORT=4000 npm start
 
 ## Instalarla como app
 
-Con la app abierta en Chrome o Edge, usa el botón de instalar en la barra de direcciones (o menú → "Instalar La Espiga").
+Con la app abierta en Chrome o Edge, usa el botón de instalar en la barra de direcciones (o menú > "Instalar La Espiga").
