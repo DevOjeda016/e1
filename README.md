@@ -6,15 +6,16 @@ App web sencilla para administrar los productos de una panadería. Incluye regis
 
 - Node.js 22.13 o superior (descárgalo en https://nodejs.org, versión LTS)
 
-Revisa tu versión con `node -v`. Si es menor, `npm start` se detiene y muestra `Unsupported engine`: actualiza Node y vuelve a correrlo.
+Revisa tu versión con `node -v`. Si es menor, `npm i` se detiene y muestra `Unsupported engine`: actualiza Node y vuelve a correrlo.
 
 ## Cómo correrla
 
 ```
+npm i
 npm start
 ```
 
-Esto instala las dependencias y levanta el servidor. Abre http://localhost:3000.
+`npm i` instala las dependencias (solo la primera vez) y `npm start` levanta el servidor. Abre http://localhost:3000.
 
 Para usar otro puerto:
 

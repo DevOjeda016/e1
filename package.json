@@ -7,7 +7,7 @@
     "node": ">=22.13"
   },
   "scripts": {
-    "start": "npm install --no-audit --no-fund --loglevel=error && node server.js"
+    "start": "node server.js"
   },
   "dependencies": {
     "express": "^5.2.1"
